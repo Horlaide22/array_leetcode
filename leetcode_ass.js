@@ -32,3 +32,21 @@ var truncateSentence = function(s, k) {
 
 return join
 };
+
+
+// 5. https://leetcode.com/problems/squares-of-a-sorted-array/
+var sortedSquares = function(nums) {
+    
+    let mapping= nums.map(function(num){
+          return num ** 2
+        
+     
+     })
+    let sorted= mapping.sort(function(a,b){ 
+        return a-b
+    })
+    
+     return sorted
+  
+  
+ };
