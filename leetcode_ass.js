@@ -50,3 +50,14 @@ var sortedSquares = function(nums) {
   
   
  };
+// 6. https://leetcode.com/problems/divide-array-into-equal-pairs/description/
+ var divideArray = function(nums) {
+    nums.sort((a,b) => a-b)
+
+    for(i=0; i<nums.length; i+=2)
+    if(nums[i] !==nums[i+1]){
+        return false 
+    }else{
+        return true 
+    }
+ }
